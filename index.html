@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Chivo:wght@200;300;400&family=Delius+Unicase:wght@700&display=swap"
+    rel="stylesheet" />
+  <title>Document</title>
+</head>
+
+<body class="bg-8CC0B9 scroll-smooth">
+  <main class="w-full overflow-hidden">
+    <header class="bg-FE7232 min-w-screen-2xl  absolute top-0 left-0 w-full flex items-center
+      z-10 lg:justify-between border-b-2 border-white">
+      <div class="flex items-center relative m-4">
+        <img src="./asset/Logo_Zushi.png" alt="Logo_Zushi" width="100px">
+      </div>
+      <div class="flex items-center">
+        <button id="hamberger" name="hamberger" type="button" class="block absolute right-4 top-3 lg:hidden">
+          <span class="hamberger-line 
+          translate duration-300 ease-in-out origin-top-left"></span>
+          <span class="hamberger-line
+          translate duration-300 ease-in-out"></span>
+          <span class="hamberger-line
+          translate duration-300 ease-in-out origin-bottom-left"></span>
+        </button>
+        <nav id="nav-nemu" class="hidden absolute py-6 bg-FDF6CD shadow-lg rounded-lg max-w[250px] w-full top-full 
+        lg:bg-transparent lg:block lg:static lg:max-w-full lg:shadow-none lg:rounded-none ">
+          <ul class="md:flex md:items-center ">
+            <li class="mx-4 text-FE7232 lg:text-white">
+              <a href="#about" class="text-xl font-chivo hover:text-white lg:hover:underline duration-500"
+                title="About $Flice">About</a>
+            </li>
+            <li class="mx-4 text-FE7232 lg:text-white">
+              <a href="#tokenomics" class="text-xl font-chivo hover:text-white lg:hover:underline duration-500"
+                title="$Flice tokenomics">Tokenomics</a>
+            </li>
+            <li class="mx-4 text-FE7232 lg:text-white">
+              <a href="#roadmap" class="text-xl font-chivo hover:text-white   lg:hover:underline duration-500"
+                title="$Flice Roadmap">Roadmap</a>
+            </li>
+            <button
+              class="btn w-[166px] h-[55px] relative text-base font-semibold text-white bg-7DA759 rounded-full border-8 border-6B8C40 mr-10">
+              <span class="absolute inset-0 flex items-center justify-center font-extrabold font-chivo ">
+                SWAP NOW
+              </span>
+              <img src="./asset/bintang.png" alt="gambar bintang" width="24px" height="24px"
+                class="image absolute -top-2 left-0  transition-transform duration-200 ease-in-out">
+              <img src="./asset/bintang.png" alt="gambar bintang" width="24px" height="24px"
+                class="absolute -bottom-8 left-2">
+            </button>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section class="w-full h-full pt-40 bg-FE7232">
+      <div class="flex flex-wrap justify-around">
+        <div class="pl-20">
+          <div class="relative">
+            <div class="absolute hidden lg:-left-40 lg:top-32 lg:block">
+              <img src="./asset/bunga.png" alt="bunga" class="w-1/2 h-1/2 lg:w-full lg:h-full">
+            </div>
+            <div class="absolute hidden lg:right-32 lg:-top-28 lg:block">
+              <img src="./asset/bunga.png" alt="bunga" class="w-1/2 h-1/2 lg:w-full lg:h-full">
+            </div>
+          </div>
+          <h1 class="text-white font-delius font-semibold text-3xl lg:text-5xl">
+            Introducing Zushi:
+            <br>The Future of
+            <br>Cryptocurrency
+          </h1>
+          <p class="font-chiva pt-5 lg:text-3xl text-white">
+            Welcome to the world of Zushi,<br>
+            the groundbreaking crypto project that is <br>
+            set to revolutionize the way we perceive <br>
+            and interact with digital currencies. <br>
+            Designed with innovation, security, and <br>
+            sustainability in mind, Zushi is poised to <br>
+            reshape the future of finance.
+          </p>
+          <div class="flex justify-around lg:justify-start pt-10 z-10">
+            <button
+              class="btn w-[171px] h-[55px] relative text-base font-semibold text-white bg-FE7232 rounded-full border-8 border-D75014 mr-10">
+              <span class="absolute inset-0 flex items-center justify-center font-extrabold font-chivo ">
+                GET $ZUSHI
+              </span>
+              <img src="./asset/bintang.png" alt="bintang" width="24px" height="24px"
+                class="image absolute -top-2 left-0  transition-transform duration-200 ease-in-out">
+            </button>
+            <button
+              class="btn w-[171px] h-[55px] relative text-base font-semibold text-white bg-01D3EC rounded-full border-8 border-0498AA mr-10">
+              <span class="absolute inset-0 flex items-center justify-center font-extrabold font-chivo ">
+                TELEGRAM
+              </span>
+              <img src="./asset/bintang.png" alt="bintang" width="24px" height="24px"
+                class="image absolute -top-2 left-0  transition-transform duration-200 ease-in-out">
+            </button>
+          </div>
+          <div class="relative">
+            <div class="absolute -left-52">
+              <img src="./asset/sumpit.png" alt="sumpit" class="w-1/2 h-1/2 lg:w-full lg:h-full">
+            </div>
+            <div class="absolute -bottom-40 lg:-bottom-60 lg:right-12 ">
+              <img src="./asset/awan.png" alt="awan" class="animate-movex w-1/2 h-1/2 lg:w-full lg:h-full">
+            </div>
+          </div>
+        </div>
+        <div class="relative">
+          <div class="absolute hidden lg:top-10 lg:right-80 lg:block">
+            <img src="./asset/sushi-ikan.png" alt="sushi" width="64" height="64">
+          </div>
+          <div class="absolute hidden lg:top-0 lg:right-72 lg:block">
+            <img src="./asset/sushi-telur.png" alt="sushi">
+          </div>
+          <div class="absolute hidden lg:top-24 lg:-left-28 lg:block">
+            <img src="./asset/awan.png" alt="awan" class="w-1/2 h-1/2 lg:w-full lg:h-full">
+          </div>
+          <div class="float-left lg:float-right text-white">
+
+            <section class="contractCopy pl-4 "><input type="text"
+                value="0x000000000000000000000000000000000000000000000000dead" style="position: fixed; left: -9999px;"
+                fdprocessedid="uwdv2f">
+              <p class="text-2xl font-chivo font-bold">ERC20 Contract</p>
+              <p id="clipboard1" class="flex items-center  font-semibold font-chivo v-medium hover:underline text-2xl">
+                <span class="reduced">0x00....Dead</span><span class="pl-2">
+                  <img src="./asset/note.png" alt="Copy" width="24px" height="24px">
+                </span>
+              </p>
+            </section>
+          </div>
+          <figure class="relative  translate-y-36 lg:translate-y-24 lg:-translate-x-16">
+            <img src="./asset/pic.png" alt="pic" class=" animate-spin slow" style="animation-duration: 10s; ">
+            <span class="absolute inset-0 flex justify-center items-center animate-move">
+              <img src="./asset/karakter.png" alt="karakter" class="" class="">
+            </span>
+            <span class="absolute -right-52 top-32">
+              <img src="./asset/bunga.png" alt="bunga">
+            </span>
+          </figure>
+        </div>
+      </div>
+    </section>
+    <section id="about" class="bg-FDF6CD w-full h-full lg:h-1228">
+      <div class="relative ">
+        <div class="py-32">
+          <h1 class="text-FE7232 pt-24 lg:pt-0 font-bold text-3xl text-center lg:text-7xl">Key Features of Zushi</h1>
+        </div>
+        <div class="relative flex justify-center flex-col items-center">
+          <div
+            class="relative bg-8CC0B9 w-full h-545 flex justify-center items-center border-4 border-30324F lg:w-1240  lg:h-678 ">
+            <div class="absolute -top-16 -right-40
+            lg:-top-20 lg:-right-24 z-10">
+              <img src="./asset/Character-Logo-Nigirizushie.png" alt="karakter-Nigirizushie"
+                class="w-1/2 h-1/2 lg:w-full lg:h-full">
+            </div>
+            <div
+              class="relative lg;-bottom-4 lg:-right-4  bg-FDF6CD w-full h-full lg:w-1109 lg:h-545 flex items-center flex-col justify-evenly border-4 border-30324F">
+              <div
+                class="absolute lg:bottom-4 lg:right-4 bg-FDF6CD w-full h-full  lg:w-1109 lg:h-545 flex items-center flex-col justify-center border-4 border-30324F">
+                <div class="slide text-center">
+                  <h2 class="text-FE7232 font-delius  lg:font-extrabold text-2xl lg:text-4xl">Privacy & Security</h2>
+                  <p class="text-FE7232 pt-10 font-chivo lg:text-4xl">Zushi leverages state-of-the-art cryptographic
+                    algorithms
+                    to ensure
+                    the utmost privacy and security for all transactions. Your financial
+                    information remains confidential, empowering you with full
+                    control over your personal data.</p>
+                </div>
+                <div class="slide text-center">
+                  <h2 class="text-FE7232 font-delius  lg:font-extrabold text-2xl lg:text-4xl">Scalability and Speed</h2>
+                  <p class="text-FE7232 pt-10  font-chivo lg:text-4xl">Zushi's advanced blockchain architecture allows
+                    for
+                    lightning-fast
+                    transaction speeds, enabling near-instantaneous
+                    transfers even during peak periods of network activity. Say goodbye to congested
+                    networks and hello to efficient transactions
+                  </p>
+                </div>
+                <div class="slide text-center">
+                  <h2 class="text-FE7232 font-delius  lg:font-extrabold text-2xl lg:text-4xl">Energy Efficiency</h2>
+                  <p class="text-FE7232 pt-10  font-chivo lg:text-4xl">Unlike traditional cryptocurrencies, Zushi is
+                    committed
+                    to
+                    environmental sustainability. By utilizing a unique consensus mechanism that requires minimal
+                    energy consumption, Zushi
+                    minimizes its carbon footprint, making it an eco-friendly choice for conscientious investors.
+                  </p>
+                </div>
+                <div class="slide text-center">
+                  <h2 class="text-FE7232 font-delius  lg:font-extrabold text-2xl lg:text-4xl">User-Friendly Experience
+                  </h2>
+                  <p class="text-FE7232 pt-10  font-chivo lg:text-4xl">Zushi is designed with simplicity in mind.
+                    Whether
+                    you're a seasoned
+                    crypto enthusiast or new to the world of digital currencies, our
+                    intuitive interface ensures a seamless user experience for
+                    everyone. Get started with ease and navigate the world of
+                    cryptocurrency effortlessly.
+                  </p>
+                </div>
+                <div class="slide text-center">
+                  <h2 class=" text-FE7232 font-delius  lg:font-extrabold text-2xl lg:text-4xl">Community Governance</h2>
+                  <p class=" text-FE7232 pt-10  font-chivo lg:text-4xl">governance model empowers token holders to
+                    actively
+                    participate
+                    in decision-making processes. Your voice matters, and together, we
+                    can shape thefuture of Zushi.
+                  </p>
+                </div>
+                <div class="absolute bottom-12 flex items-center pt-40">
+                  <button id="prev" class="w-10 h-10 lg:w-14 lg:h-14  bg-01D3EC border-4 border-0498AA rounded-full">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" fill="currentColor"
+                      class="bi bi-chevron-right" viewBox="0 0 16 16" id="IconChangeColor" transform="scale(-1, 1)">
+                      <path fill-rule="evenodd"
+                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
+                        id="mainIconPathAttribute" fill="#ffffff" stroke-width="1.2" stroke="#ffffff"></path>
+                    </svg>
+                  </button>
+                  <div class="w-28 h-0.5 bg-30324F mx-8"></div>
+                  <button id="next" class="w-10 h-10 lg:w-14 lg:h-14 bg-01D3EC border-4 border-0498AA rounded-full">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" fill="currentColor"
+                      class="bi bi-chevron-right" viewBox="0 0 16 16" id="IconChangeColor">
+                      <path fill-rule="evenodd"
+                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
+                        id="mainIconPathAttribute" fill="#ffffff" stroke-width="1.2" stroke="#ffffff"></path>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div class="absolute bottom-0 -right-16 z-10 lg:-bottom-10 lg:-right-10">
+                <img src="./asset/bunga.png" alt="bunga" class="w-1/2 h-1/2 lg:w-full lg:h-full">
+              </div>
+            </div>
+            <div class="absolute -top-16 -left-12 lg:-top-32 lg:-left-14">
+              <img src="./asset/dua-sushibi.png" alt="" class="w-1/2 h-1/2 lg:w-full lg:h-full">
+            </div>
+            <div class="absolute top-2 left-2  lg:top-4 lg:left-4 ">
+              <img src="./asset/bunga.png" alt="bunga" class="w-1/2 h-1/2 lg:w-full lg:h-full">
+            </div>
+            <div class="absolute hidden lg:block -right-28 -bottom-32 lg:-right-60 lg:-bottom-52 ">
+              <img src="./asset/awan.png" alt="awan" class="w-1/2 h-1/2 lg:w-full lg:h-full">
+            </div>
+            <div class="absolute -left-44 -bottom-80 ">
+              <img src="./asset/bunga.png" alt="awan" class="w-1/2 h-1/2 lg:w-full lg:h-full">
+            </div>
+            <div class="absolute -left-96 bottom-20  ">
+              <img src="./asset/awan.png" alt="awan" class="w-1/2 h-1/2 lg:w-[175px] lg:h-[94px]  animate-movex">
+            </div>
+          </div>
+
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <section class="w-full h-screen lg:h-full bg-FE7232 flex justify-center items-center overflow-hidden">
+      <div class="flex justify-center items-center">
+        <div class="relative w-[840px] lg:w-[2300px]">
+          <img id="spin" src="./asset/circle-text.png" alt="circle-text"
+            class="w-full transition-transform duration-300 ease-out max-w-full h-auto">
+          <span class="absolute inset-0 flex justify-center items-center">
+            <img src="./asset/Property-Frame.png" alt="frame" class="w-[700px] lg:w-[1900px] animate-spin slow"
+              style="animation-duration: 10s; transform-origin: center;">
+          </span>
+        </div>
+        <div class="absolute flex justify-center">
+          <div id="tokenomics"
+            class="relative flex justify-center items-center w-4/5 h-545 lg:w-1030 lg:h-1203 bg-FDF6CD rounded-24">
+            <div class="absolute bottom-0 -left-10 lg:-bottom-20 lg:-left-20">
+              <img src="./asset/sushi-ikan.png" alt="sushi" class="w-1/2 h-1/2 lg:w-full lg:h-full">
+            </div>
+            <div class="absolute -bottom-3 -right-16 lg:-right-12 lg:-bottom-12">
+              <img src="./asset/bunga.png" alt="bunga" class="w-1/2 h-1/2 lg:w-full lg:h-full ">
+            </div>
+            <div class="absolute -top-10 -right-36 lg:-top-20 lg:-right-20">
+              <img src="./asset/sushi-ikan.png" alt="sushi" class="w-1/2 h-1/2 lg:w-full lg:h-full">
+            </div>
+            <div class="absolute bottom-0 lg:-bottom-60 lg:left-0 right-0 flex justify-center">
+              <img src="./asset/character-mangkok.png" alt="karakter-mangkok" class="w-1/3 h-1/3 lg:w-449 lg:h-600">
+            </div>
+
+            <div class="m-2 pt-20 text-center flex justify-center flex-col">
+              <img src="./asset/text-zushi-token.png" alt="zushi-token">
+              <section class="contractCopy relative text-center flex justify-center "><input type="text"
+                  value="0x000000000000000000000000000000000000000000000000dead" style="position: fixed; left: -9999px;"
+                  fdprocessedid="uwdv2f">
+                <p id="clipboard2"
+                  class="flex items-center  font-semibold font-chivo v-medium hover:underline text-xs lg:text-2xl">
+                  <span class="reduced">0x00000000000000000000000000000000dead</span><span class="p-1 lg:pl-2">
+                    <img src="./asset/note-black.png" alt="Copy" width="24px" height="24px"
+                      class="w-1/2 h-1/2 lg:w-full lg:h-full">
+                  </span>
+                </p>
+              </section>
+              <p class="font-chivo pb-40 text-xs lg:text-4xl lg:pb-96 lg:pt-20">Zushi introduces its native token,
+                $ZUSHI,
+                <br> which serves as the backbone of the <br> ecosystem. As a $ZUSHI holder, you gain <br> access to a
+                range of benefits,
+                including <br>
+                staking rewards, voting rights, and <br> exclusive access to new features and partnerships.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="h-122 bg-8CC0B9">
+      <div class="relative">
+
+        <div class="absolute left-4 -bottom-40 lg:-left-14 lg:-bottom-40">
+          <img src="./asset/bunga.png" alt="bunga" class="w-1/2 h-1/2 lg:w-full lg:h-full">
+        </div>
+        <div class="absolute lg:flex justify-center left-0 right-2 -bottom-10 hidden ">
+          <img src="./asset/awan-kanan.png  " alt="awan-kana" class="w-1/2 h-1/2 lg:lg:w-[173px] lg:h-[93px]">
+        </div>
+        <div class="absolute  -bottom-10 -right-0 lg:-bottom-28 lg:right-0 ">
+          <img src="./asset/awan.png" alt="awan" class="w-1/2 h-1/2 lg:w-full lg:h-full">
+        </div>
+
+      </div>
+    </section>
+    <section id="roadmap"
+      class="max-w-full h-1203 lg:h-2017 flex justify-center items-center  bg-FDF6CD overflow-hidden">
+      <div class="relative container flex justify-center items-center flex-col">
+        <div class="text-center py-12">
+          <h1 class="font-delius text-5xl lg:text-6xl stroke ">ROAD<span class="stroke-road">MAP</span></h1>
+          <P class="font-chivo italic font-bold text-xs lg:text-xl">
+            The Zushi team is dedicated to continuous innovation and improvement. Our <br>
+            roadmap includes plans for cross-chain interoperability, integration with <br>
+            decentralized applications (dApps), and strategic partnerships to enhance<br>
+            the Zushi ecosystem</P>
+        </div>
+        <div class="relative flex justify-evenly flex-col lg:flex-row ">
+          <div class="absolute top-20">
+            <img src="./asset/jalur.png" alt="jalur" class="w-4/5 h-4/5  lg:w-full lg:h-full">
+          </div>
+          <div>
+            <div
+              class="map-item mr-40 lg:mr-0 flex items-center lg: translate-x-0 transition-transform duration-300 relative w-96 lg:w-542 lg:h-206 bg-white rounded-24">
+              <div class="absolute lg:-left-20 lg:-top-14"><img src="./asset/sushi-getting.png" alt="sushi"
+                  class=" w-1/2 h-1/2 lg:w-full lg:h-full"></div>
+              <div class=" pl-32 lg:pl-20 my-5">
+                <h1 class="pl-8 font-delius lg:text-3xl font-bold text-FE7232">Getting ready</h1>
+                <ul class="pt-4 gap-2 list-disc list-inside pl-0">
+                  <li class="lg:text-2xl">Community Establishment</li>
+                  <li class="lg:text-2xl">Website Release</li>
+                  <li class="lg:text-2xl">LicePaper Release</li>
+                </ul>
+              </div>
+            </div>
+            <div
+              class="map-item flex items-center translate-x-0 transition-transform duration-300 relative w-96   lg:w-542 lg:h-206 bg-white  rounded-24 mt-4 lg:mt-60 ">
+              <div class="absolute lg:-left-20 lg:-top-14"><img src="./asset/sushi-tk.png" alt="sushi"
+                  class="w-1/2 h-1/2 lg:w-full lg:h-full"></div>
+              <div class="pl-32 lg:pl-20 my-5">
+                <h1 class="pl-8 font-delius lg:text-3xl font-bold text-FE7232">MARKETING</h1>
+                <ul class="pt-4 gap-2 list-disc list-inside pl-0">
+                  <li class="lg:text-2xl">Explosive Marketing Strategy</li>
+                  <li class="lg:text-2xl">Next-Gen Partnerships</li>
+                </ul>
+              </div>
+            </div>
+            <div
+              class="map-item flex items-center  translate-x-0 transition-transform duration-300 relative w-96  lg:w-542 lg:h-206 bg-white  rounded-24 mt-4 lg:mb-28 lg:mt-72">
+              <div class="absolute lg:-left-20 lg:-top-14"><img src="./asset/sushi-daging.png" alt="sushi"
+                  class="w-1/2 h-1/2 lg:w-full lg:h-full"></div>
+              <div class="pl-32 lg:pl-20 my-5">
+                <h1 class="pl-8 font-delius lg:text-3xl font-bold text-FE7232">Grains and gains</h1>
+                <ul class="pt-4 gap-2 list-disc list-inside pl-0">
+                  <li class="lg:text-2xl">Zushi NFT Collection for holders
+                  </li>
+                  <li class="lg:text-2xl">Token Burn</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="ml-40 lg:ml-0">
+            <div
+              class="map-item-satu flex items-center translate-x-0  transition-transform duration-300 relative  lg:w-542 lg:h-206 bg-white rounded-24 mt-4 lg:mt-36 ">
+              <div class="absolute lg:-right-20 lg:-top-14"><img src="./asset/sushi.png" alt="sushi"
+                  class="w-1/2 h-1/2 lg:w-full lg:h-full"></div>
+              <div class="pl-32 lg:pl-20 my-5">
+                <h1 class="pl-8 font-delius lg:text-3xl font-bold text-FE7232">$ZUSHI COOKING</h1>
+                <ul class="pt-4 gap-2 list-disc list-inside pl-0">
+                  <li class="lg:text-2xl">Token Launch
+
+                  </li>
+                  <li class="lg:text-2xl">CMC/CG Listings</li>
+                  <li class="lg:text-2xl"> Calls, Community Engagement, Viral Marketing</li>
+
+                </ul>
+              </div>
+            </div>
+            <div
+              class="map-item-satu flex items-center translate-x-0 transition-transform duration-300  relative lg:w-542 lg:h-206 bg-white  rounded-24 mt-4 lg:mt-72 lg:mb-72 ">
+              <div class="absolute lg:-right-20 lg:-top-14"><img src="./asset/sushi-pandag.png" alt="sushi"
+                  class="w-1/2 h-1/2 lg:w-full lg:h-full"></div>
+              <div class="pl-32 lg:pl-20 my-5">
+                <h1 class="pl-8 font-delius lg:text-3xl font-bold text-FE7232">$ZUSHI SPREAD</h1>
+                <ul class="pt-4 gap-2 list-disc list-inside pl-0">
+                  <li class="lg:text-2xl">$ZUSHI Farming Release
+                  </li>
+                  <li class="lg:text-2xl">$ZUSHI Merchandise Release</li>
+                </ul>
+              </div>
+            </div>
+            <div
+              class="map-item-satu flex items-center translate-x-0 transition-transform duration-300 relative  lg:w-542 lg:h-206 bg-white  rounded-24 mt-4 lg:mt-0  ">
+              <div class="absolute lg:-right-20 lg:-top-14"><img src="./asset/sushi-salmon.png" alt="sushi"
+                  class="w-1/2 h-1/2 lg:w-full lg:h-full"></div>
+              <div class="pl-32 lg:pl-20 my-5">
+                <h1 class="pl-8 font-delius lg:text-3xl font-bold text-FE7232">HARVEST 2</h1>
+                <ul class="pt-4 gap-2 list-disc list-inside pl-0">
+                  <li class="lg:text-2xl">?????</li>
+                  <li class="lg:text-2xl">?????</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="w-full flex justify-center ">
+
+      <div class="relative  flex justify-center items-center w-full h-726 ">
+        <div class="absolute justify-center flex -z-10 w-[1000px] lg:w-[1900px]">
+          <img src="./asset/Property-Frame.png" alt="frame" class="w-[1000px] lg:w-[1900px] animate-spin slow"
+            style="animation-duration: 10s; transform-origin: center;">
+        </div>
+        <div class="absolute left-0 top-0  lg:-top-16 lg:-left-2">
+          <img src="./asset/awan.png" alt="awan" class="w-1/2 h-1/2 lg:w-full lg:h-full animate-movex">
+        </div>
+        <div class="absolute hidden lg:block lg:-top-5">
+          <img src="./asset/bunga.png" alt="bunga" class="w-1/2 h-1/2 lg:w-full lg:h-full">
+        </div>
+        <div class="absolute top-20 -right-20 lg:top-28 lg:right-40">
+          <img src="./asset/dua-sushika.png" alt="dua sushi" class="w-1/2 h-1/2 lg:w-full lg:h-full">
+        </div>
+        <div class="absolute top-20 left-0 lg:top-28 lg:left-40">
+          <img src="./asset/dua-sushiki.png" alt="dua sushi" class="w-1/2 h-1/2 lg:w-full lg:h-full">
+        </div>
+        <div class="absolute -left-10 -bottom-10 lg:-bottom-20 lg:-left-20">
+          <img src="./asset/sushi-ikan.png" alt="sushi" class="w-1/2 h-1/2 lg:w-full lg:h-full">
+        </div>
+        <div class="absolute -bottom-8 -right-20 lg:-right-12 lg:-bottom-12">
+          <img src="./asset/bunga.png" alt="bunga" class="w-1/2 h-1/2 lg:w-full lg:h-full">
+        </div>
+        <div class="absolute -right-32 -top-10 lg:-top-28 lg:-right-14 " class="w-1/2 h-1/2 lg:w-full lg:h-full">
+          <img src="./asset/sushi-ikan.png" alt="sushi" class="w-1/2 h-1/2 lg:w-full lg:h-full">
+        </div>
+        <div class="flex justify-evenly flex-col text-center items-center ">
+          <div class="">
+            <img src="./asset/text-get.png" alt="text get" class="lg:w-full lg:h-full">
+          </div>
+          <div class="pb-6 pt-16 lg:pt-0 lg:pb-20">
+            <button
+              class="btn w-[225px] h-[75px]  lg:w-[479px] lg:h-[154px] relative text-base font-semibold text-white bg-7DA759 rounded-full border-[10px] lg:border-[20px] border-6B8C40">
+              <span
+                class="absolute inset-0 flex items-center justify-center font-extrabold font-delius text-2xl lg:text-5xl ">
+                GET $ZUSHI
+              </span>
+              <img src="./asset/bintang.png" alt="bintang"
+                class="image absolute -top-2 left-0  transition-transform duration-200 ease-in-out w-[30px] h-[30px]">
+            </button>
+          </div>
+          <div class=" lg:pt-16 lg:mx-96 ">
+            <p class="font-chivo font-bold text-white stroke-black stroke-2">Are you ready to embrace the future of
+              finance? Join us on this
+              exciting journey as we unlock new
+              possibilities, redefine financial freedom, and empower individuals worldwide. Visit our website and join
+              our thriving community today!</p>
+          </div>
+        </div>
+      </div>
+      <div id="scroll-top-btn" class="hidden fixed bottom-4 right-5 z-50  rounded-full  font-delius ">
+        <button class="flex flex-col  items-end ">
+          <h1 class="transform origin-top-right rotate-90 ">Scroll To Top</h1>
+          <svg xmlns="http://www.w3.org/2000/svg" class="right h-10 w-7 bg-FE7232 rounded-24 border-2  " fill="none"
+            viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" />
+          </svg>
+        </button>
+      </div>
+    </section>
+
+
+    <footer class="h-390 flex justify-between  items-center lg:px-100px bg-FE7232 ">
+      <div class="m-6">
+        <img src="./asset/Logo_Zushi.png" alt="logo zushi">
+
+        <h1 class="font-chivo text-white lg:text-2xl lg:py-9 ">&copy;Copright Zushi. All Rights Reverved
+        </h1>
+        <h1 class="text-xl font-semibold text-white">
+          team@zushi.shop
+        </h1>
+      </div>
+      <div class="m-6">
+        <div class="container-medsos flex">
+          <div class="lg:w-72 lg:h-72 bg-01D3EC rounded-full flex justify-center items-center border-4 border-0498AA">
+            <img src="./asset/twiiter.png" alt="twitter">
+          </div>
+          <div
+            class="lg:w-72 lg:h-72 bg-01D3EC rounded-full mx-6 flex justify-center items-center border-4 border-0498AA">
+            <img src="./asset/lgo-projek.png" alt="logo projek">
+          </div>
+          <div class="lg:w-72 lg:h-72 bg-01D3EC rounded-full flex justify-center items-center border-4 border-0498AA">
+            <img src="./asset/logo-telegram.png" alt="telegram">
+          </div>
+        </div>
+        <h1 class="text-xs text-white pt-9">Contract : 0x000000000000dead </h1>
+      </div>
+    </footer>
+  </main>
+  <script src="./js/script.js"></script>
+</body>
+
+</html>
