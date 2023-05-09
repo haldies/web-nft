@@ -1,7 +1,7 @@
 const spin = document.querySelector('#spin');
 
 function rotateOnScroll() {
-  const rotation = window.scrollY / 8; // nilai rotasi dibagi dengan 2
+  const rotation = window.scrollY / 4; // nilai rotasi dibagi dengan 2
   spin.style.transform = `rotate(${rotation}deg)`;
 }
 
