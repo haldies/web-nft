@@ -80,7 +80,7 @@ function animateMapItems() {
   handleScroll();
 }
 
-window.addEventListener('scroll', animateMapItems);
+
 window.addEventListener('scroll', animateMapItems);
 // Definisikan fungsi untuk menambahkan event listener pada elemen clipboard
 function addClipboardListener(clipboard) {
