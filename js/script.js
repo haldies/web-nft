@@ -21,67 +21,66 @@ const section5 = document.querySelector('#roadmap');
 const mapItems = document.querySelectorAll('.map-item');
 
 function handleScroll() {
-  window.requestAnimationFrame(() => {
-    const mapItemsSatu = document.querySelectorAll('.map-item-satu');
-    const screenWidth = window.innerWidth;
-    let translateX = -0;
+  const mapItemsSatu = document.querySelectorAll('.map-item-satu');
+  const screenWidth = window.innerWidth;
+  let translateX = -0;
 
-    if (screenWidth >= 1024) {
-      translateX = (window.scrollY - section5.getBoundingClientRect().top) / 25;
+  if (screenWidth >= 1024) {
+    translateX = (window.scrollY - section5.getBoundingClientRect().top) / 25;
+    mapItems.forEach((mapItem) => {
+      mapItem.classList.remove('translate-left');
+      mapItem.classList.add('translate-right');
+    });
+    mapItemsSatu.forEach((mapItem) => {
+      mapItem.classList.remove('translate-right');
+      mapItem.classList.add('translate-left');
+    });
+  } else if (screenWidth >= 768) {
+    translateX = (window.scrollY - section5.getBoundingClientRect().top) / 10;
+    mapItems.forEach((mapItem) => {
+      mapItem.classList.remove('translate-right');
+      mapItem.classList.remove('translate-left');
+    });
+    mapItemsSatu.forEach((mapItem) => {
+      mapItem.classList.remove('translate-left');
+      mapItem.classList.remove('translate-right');
+    });
+  } else {
+    translateX = (window.scrollY - section5.getBoundingClientRect().top) / 35;
+    mapItems.forEach((mapItem) => {
+      mapItem.classList.remove('translate-right');
+      mapItem.classList.add('translate-left');
+    });
+    mapItemsSatu.forEach((mapItem) => {
+      mapItem.classList.remove('translate-left');
+      mapItem.classList.add('translate-right');
+    });
+  }
+
+  if (translateX > 0) {
+    if (screenWidth < 768) {
       mapItems.forEach((mapItem) => {
-        mapItem.classList.remove('translate-left');
-        mapItem.classList.add('translate-right');
+        mapItem.style.transform = `translateX(${translateX}px)`;
       });
       mapItemsSatu.forEach((mapItem) => {
-        mapItem.classList.remove('translate-right');
-        mapItem.classList.add('translate-left');
-      });
-    } else if (screenWidth >= 768) {
-      translateX = (window.scrollY - section5.getBoundingClientRect().top) / 10;
-      mapItems.forEach((mapItem) => {
-        mapItem.classList.remove('translate-right');
-        mapItem.classList.remove('translate-left');
-      });
-      mapItemsSatu.forEach((mapItem) => {
-        mapItem.classList.remove('translate-left');
-        mapItem.classList.remove('translate-right');
+        mapItem.style.transform = `translateX(-${translateX}px)`;
       });
     } else {
-      translateX = (window.scrollY - section5.getBoundingClientRect().top) / 35;
       mapItems.forEach((mapItem) => {
-        mapItem.classList.remove('translate-right');
-        mapItem.classList.add('translate-left');
+        mapItem.style.transform = `translateX(-${translateX}px)`;
       });
       mapItemsSatu.forEach((mapItem) => {
-        mapItem.classList.remove('translate-left');
-        mapItem.classList.add('translate-right');
+        mapItem.style.transform = `translateX(${translateX}px)`;
       });
     }
-
-    if (translateX > 0) {
-      if (screenWidth < 768) {
-        mapItems.forEach((mapItem) => {
-          mapItem.style.transform = `translateX(${translateX}px)`;
-        });
-        mapItemsSatu.forEach((mapItem) => {
-          mapItem.style.transform = `translateX(-${translateX}px)`;
-        });
-      } else {
-        mapItems.forEach((mapItem) => {
-          mapItem.style.transform = `translateX(-${translateX}px)`;
-        });
-        mapItemsSatu.forEach((mapItem) => {
-          mapItem.style.transform = `translateX(${translateX}px)`;
-        });
-      }
-    }
-  });
+  }
 }
 
 function animateMapItems() {
-  window.requestAnimationFrame(handleScroll);
+  handleScroll();
 }
 
+window.addEventListener('scroll', animateMapItems);
 window.addEventListener('scroll', animateMapItems);
 // Definisikan fungsi untuk menambahkan event listener pada elemen clipboard
 function addClipboardListener(clipboard) {
