@@ -1947,6 +1947,10 @@ body {
     padding-top: 2rem;
   }
 
+  .lg\:pb-80 {
+    padding-bottom: 20rem;
+  }
+
   .lg\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
