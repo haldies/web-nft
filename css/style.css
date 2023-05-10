@@ -760,6 +760,11 @@ video {
   margin: 1.5rem;
 }
 
+.mx-2 {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
 .mx-4 {
   margin-left: 1rem;
   margin-right: 1rem;
@@ -773,11 +778,6 @@ video {
 .my-5 {
   margin-top: 1.25rem;
   margin-bottom: 1.25rem;
-}
-
-.mx-2 {
-  margin-left: 0.5rem;
-  margin-right: 0.5rem;
 }
 
 .ml-40 {
@@ -1089,8 +1089,8 @@ video {
   overflow: hidden;
 }
 
-.scroll-smooth {
-  scroll-behavior: smooth;
+.overflow-x-hidden {
+  overflow-x: hidden;
 }
 
 .rounded-24 {
@@ -1377,6 +1377,10 @@ video {
   transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
 }
 
+html, body {
+  scroll-behavior: smooth;
+}
+
 .navbar-fixed {
   position: fixed;
   z-index: 9999;
@@ -1431,6 +1435,25 @@ video {
   -webkit-text-stroke-width: 3px;
   -webkit-text-stroke-color: #000000;
   -webkit-text-fill-color: #ffffff;
+}
+
+/* Ubah warna scroll bar */
+
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: #D75014;
+}
+
+/* Ubah warna thumb */
+
+::-webkit-scrollbar-thumb {
+  background-color: #FE7232;
+}
+
+/* Aktifkan mode hover untuk thumb */
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #5D918B;
 }
 
 .hover\:text-white:hover {
@@ -1821,10 +1844,6 @@ video {
 
   .lg\:justify-start {
     justify-content: flex-start;
-  }
-
-  .lg\:justify-end {
-    justify-content: flex-end;
   }
 
   .lg\:justify-between {

@@ -1,12 +1,11 @@
 const spin = document.querySelector('#spin');
 
 function rotateOnScroll() {
-  const rotation = window.scrollY / 4; // nilai rotasi dibagi dengan 2
+  const rotation = window.scrollY / 10;
   spin.style.transform = `rotate(${rotation}deg)`;
 }
 
 window.addEventListener('scroll', rotateOnScroll);
-
 
 const hamberger = document.querySelector('#hamberger');
 const navMenu = document.querySelector('#nav-nemu');
@@ -182,4 +181,11 @@ scrollTopBtn.addEventListener('click', () => {
     top: 0,
     behavior: 'smooth'
   });
+});
+
+
+window.addEventListener('scroll', function() {
+  const scrollableElement = document.documentElement;
+  const scrollTop = scrollableElement.scrollTop;
+  // Lakukan sesuatu dengan nilai scrollTop
 });
