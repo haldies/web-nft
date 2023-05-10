@@ -812,6 +812,14 @@ video {
   margin-top: 1rem;
 }
 
+.mr-12 {
+  margin-right: 3rem;
+}
+
+.mr-16 {
+  margin-right: 4rem;
+}
+
 .block {
   display: block;
 }
