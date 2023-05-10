@@ -856,6 +856,10 @@ video {
   height: 80%;
 }
 
+.h-4\/6 {
+  height: 66.666667%;
+}
+
 .h-545 {
   height: 34.063rem;
 }
@@ -914,6 +918,10 @@ video {
 
 .w-4\/5 {
   width: 80%;
+}
+
+.w-4\/6 {
+  width: 66.666667%;
 }
 
 .w-7 {
@@ -1248,6 +1256,10 @@ video {
   padding-left: 1rem;
 }
 
+.pl-6 {
+  padding-left: 1.5rem;
+}
+
 .pl-8 {
   padding-left: 2rem;
 }
@@ -1290,10 +1302,6 @@ video {
 
 .pt-9 {
   padding-top: 2.25rem;
-}
-
-.pl-6 {
-  padding-left: 1.5rem;
 }
 
 .text-center {
@@ -1447,7 +1455,7 @@ body {
 }
 
 .stroke-key {
-  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #000000;
   -webkit-text-fill-color: #fe7232;
 }
