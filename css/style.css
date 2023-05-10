@@ -736,6 +736,10 @@ video {
   top: 100%;
 }
 
+.top-10 {
+  top: 2.5rem;
+}
+
 .-z-10 {
   z-index: -10;
 }
@@ -752,8 +756,8 @@ video {
   float: left;
 }
 
-.m-1 {
-  margin: 0.25rem;
+.m-4 {
+  margin: 1rem;
 }
 
 .m-6 {
@@ -762,10 +766,6 @@ video {
 
 .m-8 {
   margin: 2rem;
-}
-
-.m-4 {
-  margin: 1rem;
 }
 
 .mx-12 {
@@ -788,6 +788,11 @@ video {
   margin-bottom: 1.25rem;
 }
 
+.mx-5 {
+  margin-left: 1.25rem;
+  margin-right: 1.25rem;
+}
+
 .ml-40 {
   margin-left: 10rem;
 }
@@ -796,12 +801,12 @@ video {
   margin-right: 0.25rem;
 }
 
-.mr-10 {
-  margin-right: 2.5rem;
-}
-
 .mr-24 {
   margin-right: 6rem;
+}
+
+.mr-3 {
+  margin-right: 0.75rem;
 }
 
 .mr-40 {
@@ -810,14 +815,6 @@ video {
 
 .mt-4 {
   margin-top: 1rem;
-}
-
-.mr-12 {
-  margin-right: 3rem;
-}
-
-.mr-16 {
-  margin-right: 4rem;
 }
 
 .block {
@@ -868,6 +865,10 @@ video {
   height: 80%;
 }
 
+.h-4\/6 {
+  height: 66.666667%;
+}
+
 .h-545 {
   height: 34.063rem;
 }
@@ -904,10 +905,6 @@ video {
   height: 100vh;
 }
 
-.h-4\/6 {
-  height: 66.666667%;
-}
-
 .w-1\/2 {
   width: 50%;
 }
@@ -930,6 +927,10 @@ video {
 
 .w-4\/5 {
   width: 80%;
+}
+
+.w-4\/6 {
+  width: 66.666667%;
 }
 
 .w-7 {
@@ -974,10 +975,6 @@ video {
 
 .w-full {
   width: 100%;
-}
-
-.w-4\/6 {
-  width: 66.666667%;
 }
 
 .max-w-full {
@@ -1244,6 +1241,11 @@ video {
   padding-bottom: 1rem;
 }
 
+.px-5 {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
 .pb-20 {
   padding-bottom: 5rem;
 }
@@ -1318,6 +1320,18 @@ video {
 
 .pt-9 {
   padding-top: 2.25rem;
+}
+
+.pb-28 {
+  padding-bottom: 7rem;
+}
+
+.pb-10 {
+  padding-bottom: 2.5rem;
+}
+
+.pb-12 {
+  padding-bottom: 3rem;
 }
 
 .text-center {
@@ -1722,12 +1736,12 @@ body {
     float: right;
   }
 
-  .lg\:m-6 {
-    margin: 1.5rem;
-  }
-
   .lg\:m-1 {
     margin: 0.25rem;
+  }
+
+  .lg\:m-6 {
+    margin: 1.5rem;
   }
 
   .lg\:mx-6 {
@@ -1840,10 +1854,6 @@ body {
     height: 100%;
   }
 
-  .lg\:h-1\/2 {
-    height: 50%;
-  }
-
   @media (min-width: 1024px) {
     .lg\:lg\:w-\[173px\] {
       width: 173px;
@@ -1900,10 +1910,6 @@ body {
 
   .lg\:w-full {
     width: 100%;
-  }
-
-  .lg\:w-1\/2 {
-    width: 50%;
   }
 
   .lg\:max-w-full {
@@ -2004,6 +2010,10 @@ body {
 
   .lg\:pt-8 {
     padding-top: 2rem;
+  }
+
+  .lg\:pt-10 {
+    padding-top: 2.5rem;
   }
 
   .lg\:text-2xl {
