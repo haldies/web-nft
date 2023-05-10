@@ -17,9 +17,9 @@
 <body class="bg-8CC0B9 overflow-x-hidden">
   <main class="w-full overflow-hidden">
     <header class="bg-FE7232 min-w-screen-2xl  absolute top-0 left-0 w-full flex items-center
-      z-10 lg:justify-between border-b-[1px] border-white">
-      <div class="flex items-center relative m-4">
-        <img src="./asset/Logo_Zushi.png" alt="Logo_Zushi" width="100px">
+      z-10 lg:justify-evenly border-b-[1px] border-white">
+      <div class="flex items-center relative m-1">
+        <img src="./asset/Logo_Zushi.png" alt="Logo_Zushi">
       </div>
       <div class="flex items-center">
         <button id="hamberger" name="hamberger" type="button" class="block absolute right-4 top-3 lg:hidden">
@@ -31,8 +31,8 @@
           translate duration-300 ease-in-out origin-bottom-left"></span>
         </button>
         <button
-          class="btn blok lg:hidden w-[150px] h-[40px] lg:w-[166px] lg:h-[55px] relative text-base font-semibold text-white bg-7DA759 rounded-full border-8 border-6B8C40 mr-10">
-          <span class="absolute inset-0 flex items-center justify-center font-extrabold font-chivo ">
+          class="btn blok lg:hidden w-[150px] h-[40px] lg:w-[166px] lg:h-[55px] relative text-base font-semibold text-white bg-7DA759 rounded-full border-8 border-6B8C40 mr-24">
+          <span class="absolute inset-0 flex items-center justify-center font-semibold font-chivo ">
             SWAP NOW
           </span>
           <img src="./asset/bintang.png" alt="gambar bintang" width="24px" height="24px"
@@ -40,45 +40,45 @@
           <img src="./asset/bintang.png" alt="gambar bintang" width="24px" height="24px"
             class="absolute -bottom-8 left-2">
         </button>
-        <nav id="nav-nemu" class="hidden absolute py-6 bg-FDF6CD shadow-lg rounded-lg max-w[250px] w-full top-full 
+        <nav id="nav-nemu" class="hidden absolute py-4 bg-FDF6CD shadow-lg rounded-lg max-w[250px] w-full top-full 
         lg:bg-transparent lg:block lg:static lg:max-w-full lg:shadow-none lg:rounded-none ">
           <ul class="md:flex md:items-center ">
-            <li class="mx-4 text-FE7232 lg:text-white">
+            <li class="mx-12 lg:pl-80 text-FE7232 lg:text-white">
               <a href="#about" class="scroll-link text-xl font-chivo hover:text-white lg:hover:underline duration-500"
                 title="About $Flice">About</a>
             </li>
-            <li class="mx-4 text-FE7232 lg:text-white">
+            <li class="mx-12 text-FE7232 lg:text-white">
               <a href="#tokenomics"
                 class="scroll-link text-xl font-chivo hover:text-white lg:hover:underline duration-500"
                 title="$Flice tokenomics">Tokenomics</a>
             </li>
-            <li class="mx-4 text-FE7232 lg:text-white">
+            <li class="mx-12 text-FE7232 lg:text-white">
               <a href="#roadmap"
                 class="scroll-link text-xl font-chivo hover:text-white   lg:hover:underline duration-500"
-                title="$Flice Roadmap">Roadmap</a>
+                title="$Flice Roadmap">Roadmaps</a>
             </li>
             <button
-              class="btn w-[166px] h-[55px] hidden lg:block relative text-base font-semibold text-white bg-7DA759 rounded-full border-8 border-6B8C40 mr-10">
-              <span class="absolute inset-0 flex items-center justify-center font-extrabold font-chivo ">
+              class="btn w-[166px] h-[55px] hidden lg:block relative text-base  text-white bg-7DA759 rounded-full border-8 border-6B8C40 mr-10">
+              <span class="absolute inset-0 flex items-center justify-center  font-chivo ">
                 SWAP NOW
               </span>
               <img src="./asset/bintang.png" alt="gambar bintang" width="24px" height="24px"
                 class="image absolute -top-2 left-0  transition-transform duration-200 ease-in-out">
               <img src="./asset/bintang.png" alt="gambar bintang" width="24px" height="24px"
-                class="absolute -bottom-8 left-2">
+                class="absolute -bottom-7 left-2">
             </button>
           </ul>
         </nav>
       </div>
     </header>
-    <section class="w-full h-full pt-40  bg-FE7232 ">
+    <section class="w-full h-full pt-32 lg:pt-52  bg-FE7232 ">
       <div class="flex flex-wrap justify-around">
         <div class="pl-4">
           <div class="relative">
             <div class="absolute hidden lg:-left-40 lg:top-32 lg:block">
               <img src="./asset/bunga.png" alt="bunga" class="w-1/2 h-1/2 lg:w-full lg:h-full">
             </div>
-            <div class="absolute hidden lg:right-32 lg:-top-28 lg:block">
+            <div class="absolute hidden lg:right-32 lg:-top-36 lg:block">
               <img src="./asset/bunga.png" alt="bunga" class="w-1/2 h-1/2 lg:w-full lg:h-full">
             </div>
           </div>
@@ -135,7 +135,7 @@
           </div>
           <div class=" float-left lg:float-right text-white">
 
-            <section class="contractCopy pl-4 "><input type="text"
+            <section class="contractCopy lg:pr-14 "><input type="text"
                 value="0x000000000000000000000000000000000000000000000000dead" style="position: fixed; left: -9999px;"
                 fdprocessedid="uwdv2f">
               <p class="text-2xl font-chivo font-bold">ERC20 Contract</p>
@@ -161,7 +161,8 @@
     <section id="about" class="bg-FDF6CD w-full h-full lg:h-1228">
       <div class="relative ">
         <div class="py-32">
-          <h1 class="stroke text-FE7232 pt-24 lg:pt-0 font-bold text-3xl text-center lg:text-7xl">Key Features of Zushi
+          <h1 class="stroke-key text-FE7232 pt-24 lg:pt-0 font-bold text-3xl text-center lg:text-7xl">Key Features of
+            Zushi
           </h1>
         </div>
         <div class="relative flex justify-center flex-col items-center">
@@ -259,7 +260,7 @@
             <div class="absolute hidden lg:block -right-28 -bottom-32 lg:-right-60 lg:-bottom-52 ">
               <img src="./asset/awan.png" alt="awan" class="w-1/2 h-1/2 lg:w-full lg:h-full">
             </div>
-            <div class="absolute -left-44 -bottom-80 ">
+            <div class="absolute -left-56 -bottom-80 z-50 ">
               <img src="./asset/bunga.png" alt="awan" class="w-1/2 h-1/2 lg:w-full lg:h-full">
             </div>
             <div class="absolute -left-96 bottom-20  ">
@@ -272,7 +273,7 @@
       </div>
     </section>
 
-    <section class="w-full h-screen lg:h-full bg-FE7232 flex justify-center items-center overflow-hidden">
+    <section class="relative w-full h-screen lg:h-full bg-FE7232 flex justify-center items-center overflow-hidden">
       <div class="flex justify-center items-center">
         <div class="relative w-[840px] lg:w-[2300px]">
           <img id="spin" src="./asset/circle-text.png" alt="circle-text"
@@ -339,10 +340,10 @@
     </section>
     <section id="roadmap"
       class="max-w-full h-1203 lg:h-2017 flex justify-center items-center  bg-FDF6CD overflow-hidden">
-      <div class="relative container flex justify-center items-center flex-col">
-        <div class="text-center py-12">
-          <h1 class="font-delius text-5xl lg:text-6xl stroke ">ROAD<span class="stroke-road">MAP</span></h1>
-          <P class="p-0 lg:pt-20 font-chivo italic font-bold text-xs lg:text-xl">
+      <div class="relative pb-80 container flex justify-center items-center flex-col">
+        <div class="text-center pb-6">
+          <h1 class="font-delius text-5xl lg:text-7xl stroke ">ROAD<span class="stroke-road">MAP</span></h1>
+          <P class="p-0 lg:pt-8 font-chivo italic font-bold text-xs lg:text-xl">
             The Zushi team is dedicated to continuous innovation and improvement. Our <br>
             roadmap includes plans for cross-chain interoperability, integration with <br>
             decentralized applications (dApps), and strategic partnerships to enhance<br>

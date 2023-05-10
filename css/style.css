@@ -592,6 +592,10 @@ video {
   bottom: -10rem;
 }
 
+.-bottom-7 {
+  bottom: -1.75rem;
+}
+
 .-bottom-8 {
   bottom: -2rem;
 }
@@ -608,12 +612,12 @@ video {
   left: -3rem;
 }
 
-.-left-44 {
-  left: -11rem;
-}
-
 .-left-52 {
   left: -13rem;
+}
+
+.-left-56 {
+  left: -14rem;
 }
 
 .-left-96 {
@@ -748,26 +752,26 @@ video {
   float: left;
 }
 
-.m-2 {
-  margin: 0.5rem;
+.m-1 {
+  margin: 0.25rem;
 }
 
-.m-4 {
-  margin: 1rem;
+.m-2 {
+  margin: 0.5rem;
 }
 
 .m-6 {
   margin: 1.5rem;
 }
 
+.mx-12 {
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
 .mx-2 {
   margin-left: 0.5rem;
   margin-right: 0.5rem;
-}
-
-.mx-4 {
-  margin-left: 1rem;
-  margin-right: 1rem;
 }
 
 .mx-8 {
@@ -790,6 +794,10 @@ video {
 
 .mr-10 {
   margin-right: 2.5rem;
+}
+
+.mr-24 {
+  margin-right: 6rem;
 }
 
 .mr-40 {
@@ -1198,17 +1206,12 @@ video {
   stroke-width: 2;
 }
 
-.p-1 {
-  padding: 0.25rem;
-}
-
 .p-0 {
   padding: 0px;
 }
 
-.py-12 {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+.p-1 {
+  padding: 0.25rem;
 }
 
 .py-32 {
@@ -1216,9 +1219,9 @@ video {
   padding-bottom: 8rem;
 }
 
-.py-6 {
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .pb-40 {
@@ -1227,6 +1230,10 @@ video {
 
 .pb-6 {
   padding-bottom: 1.5rem;
+}
+
+.pb-80 {
+  padding-bottom: 20rem;
 }
 
 .pl-0 {
@@ -1263,6 +1270,10 @@ video {
 
 .pt-24 {
   padding-top: 6rem;
+}
+
+.pt-32 {
+  padding-top: 8rem;
 }
 
 .pt-4 {
@@ -1431,6 +1442,12 @@ body {
   display: none;
 }
 
+.stroke-key {
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #000000;
+  -webkit-text-fill-color: #fe7232;
+}
+
 .stroke {
   -webkit-text-stroke-width: 3px;
   -webkit-text-stroke-color: #000000;
@@ -1580,6 +1597,10 @@ body {
 
   .lg\:-top-32 {
     top: -8rem;
+  }
+
+  .lg\:-top-36 {
+    top: -9rem;
   }
 
   .lg\:-top-5 {
@@ -1852,8 +1873,8 @@ body {
     justify-content: flex-start;
   }
 
-  .lg\:justify-between {
-    justify-content: space-between;
+  .lg\:justify-evenly {
+    justify-content: space-evenly;
   }
 
   .lg\:rounded-none {
@@ -1898,6 +1919,14 @@ body {
     padding-left: 5rem;
   }
 
+  .lg\:pl-80 {
+    padding-left: 20rem;
+  }
+
+  .lg\:pr-14 {
+    padding-right: 3.5rem;
+  }
+
   .lg\:pt-0 {
     padding-top: 0px;
   }
@@ -1908,6 +1937,14 @@ body {
 
   .lg\:pt-20 {
     padding-top: 5rem;
+  }
+
+  .lg\:pt-52 {
+    padding-top: 13rem;
+  }
+
+  .lg\:pt-8 {
+    padding-top: 2rem;
   }
 
   .lg\:text-2xl {
@@ -1927,11 +1964,6 @@ body {
 
   .lg\:text-5xl {
     font-size: 3rem;
-    line-height: 1;
-  }
-
-  .lg\:text-6xl {
-    font-size: 3.75rem;
     line-height: 1;
   }
 
