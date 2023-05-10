@@ -1202,6 +1202,10 @@ video {
   padding: 0.25rem;
 }
 
+.p-0 {
+  padding: 0px;
+}
+
 .py-12 {
   padding-top: 3rem;
   padding-bottom: 3rem;
@@ -1377,8 +1381,10 @@ video {
   transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
 }
 
-html, body {
+html,
+body {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 .navbar-fixed {
@@ -1431,7 +1437,7 @@ html, body {
   -webkit-text-fill-color: #fe7232;
 }
 
-.stroke-road{
+.stroke-road {
   -webkit-text-stroke-width: 3px;
   -webkit-text-stroke-color: #000000;
   -webkit-text-fill-color: #ffffff;
@@ -1441,19 +1447,19 @@ html, body {
 
 ::-webkit-scrollbar {
   width: 10px;
-  background-color: #D75014;
+  background-color: #d75014;
 }
 
 /* Ubah warna thumb */
 
 ::-webkit-scrollbar-thumb {
-  background-color: #FE7232;
+  background-color: #fe7232;
 }
 
 /* Aktifkan mode hover untuk thumb */
 
 ::-webkit-scrollbar-thumb:hover {
-  background-color: #5D918B;
+  background-color: #5d918b;
 }
 
 .hover\:text-white:hover {
