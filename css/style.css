@@ -764,6 +764,14 @@ video {
   margin: 1.5rem;
 }
 
+.m-3 {
+  margin: 0.75rem;
+}
+
+.m-8 {
+  margin: 2rem;
+}
+
 .mx-12 {
   margin-left: 3rem;
   margin-right: 3rem;
@@ -856,10 +864,6 @@ video {
   height: 80%;
 }
 
-.h-4\/6 {
-  height: 66.666667%;
-}
-
 .h-545 {
   height: 34.063rem;
 }
@@ -918,10 +922,6 @@ video {
 
 .w-4\/5 {
   width: 80%;
-}
-
-.w-4\/6 {
-  width: 66.666667%;
 }
 
 .w-7 {
@@ -1346,6 +1346,23 @@ video {
   line-height: 1rem;
 }
 
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+.text-\[40px\] {
+  font-size: 40px;
+}
+
+.text-\[35px\] {
+  font-size: 35px;
+}
+
+.text-\[34px\] {
+  font-size: 34px;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -1370,6 +1387,10 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-\[\] {
+  color: ;
 }
 
 .shadow-lg {
@@ -1454,8 +1475,14 @@ body {
   display: none;
 }
 
+.stroke-melengkung {
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #000000;
+  -webkit-text-fill-color: #fe7232;
+}
+
 .stroke-key {
-  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-width: 3px;
   -webkit-text-stroke-color: #000000;
   -webkit-text-fill-color: #fe7232;
 }
